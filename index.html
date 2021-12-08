@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <title>Home - Philip Martin</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#">Philip Martin</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">BIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="menu-2">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </nav>
+        <div class="toggle-menu"><i class="fas fa-bars"></i></div>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/1-Abstract Paitings/Autopilot, YVR, 2010, 36”x 60”.jpg"
+                            alt="Swiper01">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente similique itaque quia
+                            libero harum accusantium in vero explicabo minus temporibus! Aperiam, ipsam et. Doloribus
+                            exercitationem deserunt, aliquid facere eum rem!</p>
+                    </div>
+                    <div class="swiper-slide"><img src="img/2-Marine Art/Stalca, 2017, 30”x 40”.jpg" alt="Swiper02">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dicta sit et autem error?
+                            Impedit sunt, similique blanditiis aliquid fuga atque eaque numquam, recusandae, possimus
+                            explicabo itaque debitis porro quibusdam.</p>
+                    </div>
+                    <div class="swiper-slide"><img src="img/1-Abstract Paitings/Upwardly Mobile, 2011, 48”x 60”.jpg"
+                            alt="Swiper03">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos vitae ipsam
+                            temporibus architecto debitis quasi fugiat voluptatum facere animi eum, eius recusandae
+                            libero, consectetur possimus obcaecati incidunt harum modi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="text">
+                <h1>Philip Martin</h1>
+                <p>Philip Martin is a Vancouver painter of abstract, and figurative art. He works in acrylics,
+                    watercolours, and graphite. He began exhibiting in 1994 with a showing of animation-style
+                    portraiture. His contemporary abstractions are based on nature and light. This website is a
+                    selection of work showcasing the diversity of Martin’s style and expression.</p>
+                <button>Read more</button>
+            </div>
+            <div class="photo"><img src="img/person.jpg" alt=""></div>
+        </div>
+
+        <div class="contact">
+            <h3>Contact</h3>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name">         
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Type your message here..." style="height:200px"></textarea>
+          
+              <input class="submit" type="submit" value="Submit">
+          </div>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; 2021 by Philip Martin</p>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('.toggle-menu').click(function () {
+                $('nav').toggleClass('active')
+            });
+        });
+    </script>
+    <script src="dist/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: true
+            },
+        });
+    </script>
+
+
+
+</body>
+
+</html>
